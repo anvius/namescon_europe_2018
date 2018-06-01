@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>AI applied to HFDI</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="description" content="Artificial Intelligence applied to High Frecuency Domain Investment">
 		<meta name="author" content="Hakim El Hattab">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,45 +14,70 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="vendor/revealjs/css/reveal.css">
+		<link rel="stylesheet" href="vendor/revealjs/css/theme/moon.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="vendor/revealjs/lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'vendor/revealjs/css/print/pdf.css' : 'vendor/revealjs/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
 		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
+		<script src="vendor/revealjs/lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<style>
+			.reveal .footer {
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+				font-size: 0.5em;
+			}
+		</style>
 	</head>
 
 	<body>
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
+			<!-- Footer info in every slide -->
+			<div class='footer'>
+				NamesCon Europe 2018.<br>
+				AI applied to HFDI by @anvius.<br>
+				By <strong>NAMEMOTION</strong> ... We are selling your domains...quickly
+			</div>
+							<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
-					</p>
-				</section>
+					<section data-markdown>
+						# AI applied to
+						### High Frequency Domain Ivestment (HFDI)
+						
+						<foot>Probando</foot>
+					
+						Note:
+							This will only display in the notes window.
+					</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<section data-markdown>
+						### Special thanks
+
+						Partners
+							
+					</section>
+					<section data-markdown>
+						### About me
+
+						Partners
+						
+					</section>
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -378,8 +403,8 @@ Reveal.addEventListener( 'customevent', function() {
 
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="vendor/revealjs/lib/js/head.min.js"></script>
+		<script src="vendor/revealjs/js/reveal.js"></script>
 
 		<script>
 
@@ -394,13 +419,14 @@ Reveal.addEventListener( 'customevent', function() {
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/search/search.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'vendor/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'vendor/revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'vendor/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'vendor/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'vendor/revealjs/plugin/search/search.js', async: true },
+					{ src: 'vendor/revealjs/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'vendor/revealjs/plugin/notes/notes.js', async: true },
+					{ src: 'vendor/revealjs/plugin/math/math.js', async: true }
 				]
 			});
 
